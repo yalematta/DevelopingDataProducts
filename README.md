@@ -4,4 +4,4 @@
 - It covers the basics of creating data products using Shiny, R packages, and interactive graphics. 
 - This course focuses on the statistical fundamentals of creating a data product.
 - This product can be used to tell a story about data to a mass audience.
-- Peer Assessment Project; Shiny App can be found here.
+- Peer Assessment Project; Shiny App can be found here: http://yalisme.shinyapps.io/MoocShiny
