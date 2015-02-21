@@ -26,6 +26,11 @@ shinyServer(
       tags$img(src= universities[im,8])
       
     })
+    
+    output$year <- renderText({
+      im <- as.numeric(colm())- 1
+      paste("This university joined Coursera in", universities[im,9])
+    })
   }
 )
 

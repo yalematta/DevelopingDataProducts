@@ -34,12 +34,18 @@ shinyUI(
     sidebarLayout( position = "right",
       sidebarPanel(
         selectInput("uni", "Select a University", choices = univ, selected = 1),
+        textOutput("year"),
+        br(),
         htmlOutput("univLogo")
+        
         ),
       
       # Main Panel
       mainPanel(
-        plotOutput("plot")
+        tabsetPanel(
+          tabPanel("Plot", plotOutput("plot")),
+          tabPanel("Summary", textOutput("summary"))
+        )
       )	
     )
   ))
