@@ -44,7 +44,7 @@ shinyUI(
       mainPanel(
         tabsetPanel(
           tabPanel("Plot", plotOutput("plot")),
-          tabPanel("Summary", textOutput("summary"))
+          tabPanel("Summary", htmlOutput("summary"))
         )
       )	
     )
